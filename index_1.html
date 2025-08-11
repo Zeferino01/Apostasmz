@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <p>Tens 2 tentativas grátis para girar a roleta. Não custa nada, clique no botao girar!</p>
+        </div>
+        <div class="main-content">
+            <h1>🎯 Tente a sua sorte! 🎯</h1>
+            <p>Clique no botão e gire a roleta para ganhar prêmios!</p>
+            <div class="wheel-container">
+                <img src="wheel.png" alt="Roleta da Sorte" class="wheel" id="wheel">
+                <img src="marker.png" alt="Marcador" class="marker">
+                <button class="spin-button" id="spinButton">🎲 GIRAR</button>
+            </div>
+            <div class="countdown-section">
+                <p>﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿⏳ <span id="countdown-message">_Você tem 01:59 para girar e garantir sua chance gratuita!_</span></p>
+                <div class="countdown-timer">
+                    <div class="time-box">
+                        <span id="minutes">02</span>
+                        <p>Minutos</p>
+                    </div>
+                    <div class="time-box">
+                        <span id="seconds">57</span>
+                        <p>Segundos</p>
+                    </div>
+                </div>
+            </div>
+            <div class="instructions">
+                <h2>Chegou sua vez de ganhar!</h2>
+                <ul>
+                    <li>Para começar, basta apertar o botão dourado escrito <strong>GIRAR</strong>!</li>
+                    <li>💡 <strong>Você tem 2 tentativas totalmente grátis!</strong></li>
+                    <li>A roleta está cheia de prêmios esperando por você!</li>
+                </ul>
+            </div>
+            <div class="prizes">
+                <h2>🎁 Prêmios da Roleta da Sorte</h2>
+                <ul>
+                    <li>✅ <strong>10 Meticais</strong> – Comece com sorte!</li>
+                    <li>✅ <strong>100 Meticais</strong> – Já dá pra comemorar!</li>
+                    <li>✅ <strong>500 Meticais</strong> – Subindo o nível!</li>
+                    <li>✅ <strong>1.000 Meticais</strong> – Agora sim!</li>
+                    <li>✅ <strong>5.000 Meticais</strong> – Sorte grande!</li>
+                    <li>✅ <strong>10.000 Meticais</strong> – O prêmio dos sonhos! 💸</li>
+                </ul>
+            </div>
+            <div class="share-section">
+                <h2>🔁 GANHE MAIS GIROS GRÁTIS!</h2>
+                <p>Compartilhe o site <strong><a href="https://gira-roleta-e-ganha-ate-10000mts-naa-roleta.vercel.app/">https://gira-roleta-e-ganha-ate-10000mts-naa-roleta.vercel.app/</a></strong> com seus amigos e familiares por WhatsApp, SMS, Telegram, ou redes sociais e ganhe <strong>+1 giro grátis</strong> a cada pessoa!</p>
+                <p>💬 Frase pronta para enviar:</p>
+                <div class="copy-message">
+                    <button id="copyButton">📋 Copiar mensagem</button>
+                </div>
+                <a href="https://api.whatsapp.com/send?text=Gire%20a%20roleta%20e%20ganhe%20at%C3%A9%2010.000%20Meticais%20gr%C3%A1tis!%20Acesse%20agora:%20https://gira-roleta-e-ganha-ate-10000mts-naa-roleta.vercel.app/" class="whatsapp-button" target="_blank">📲 Compartilhar no WhatsApp</a>
+            </div>
+            <div class="terms">
+                <h2><strong>Termos de Uso e Direitos Reservados</strong></h2>
+                <p><em>© 2025 apostasdemoz.site – Todos os direitos reservados.</em></p>
+                <p>A presente simulação interativa tem como principal finalidade o estímulo à participação em ofertas promocionais vinculadas a plataformas externas. Os valores exibidos na roleta não representam prêmios efetivamente creditáveis, estando sua disponibilização condicionada à conclusão de processos de adesão e validação por parte de terceiros. A exibição de montantes possui caráter meramente demonstrativo, sem constituição de obrigação por parte deste domínio ou seus parceiros comerciais.</p>
+                <p>Este conteúdo está protegido pelas normas de propriedade intelectual. A utilização indevida está sujeita às penalidades legais aplicáveis.</p>
+            </div>
+        </div>
+    </div>
+    <audio id="spinSound" src="spin.mp3" preload="auto"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
